@@ -54,14 +54,16 @@ function App() {
       <h1>FACEBOOK</h1>
       <h2>Welcome {username}</h2>
       <form className='App__form'>
-        <FormControl>
+        <FormControl className='App__formControl'>
           {/* <InputLabel>Enter A Message...</InputLabel> */}
           <Input
+            className='App__input'
             placeholder='Enter A Message...'
             value={input}
             onChange={(event) => setInput(event.target.value)}
           />
           <IconButton
+            className='App__iconButton'
             disabled={!input}
             variant='contained'
             color='primary'
